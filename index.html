@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="es-CL">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Generador Presupuestario · RACSERVEI</title>
+<meta name="description" content="Generador Presupuestario: programa de escritorio de RACSERVEI para crear presupuestos e informes para clientes.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 256 256'%3E%3Crect width='256' height='256' rx='57.6' fill='%233F2FB5'/%3E%3Cg transform='translate(37.16 37.38) scale(0.709)' fill='%23fff'%3E%3Cpath fill-rule='evenodd' d='M219.91,64A112,112 0 1 0 240,128H130V154H195.14A72,72 0 1 1 160.98,64ZM130,106H240V80H130Z'/%3E%3C/g%3E%3C/svg%3E">
+<style>
+  :root {
+    --accent: #3F2FB5; --accent-soft: #E6E3F7;
+    --ink: #17182B; --ink-2: #3D3F55; --muted: #55576C;
+    --bg: #F4F3EF; --surface: #FFFFFF; --line: #E2E0D8;
+  }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--bg); color: var(--ink); font: 17px/1.6 system-ui, -apple-system, "Segoe UI", sans-serif; }
+  .wrap { max-width: 760px; margin: 0 auto; padding: 0 16px; }
+  header { padding: 40px 0 8px; display: flex; align-items: center; gap: 14px; }
+  header svg { width: 52px; height: 52px; flex: none; }
+  header .brand { font-weight: 700; font-size: 1.25rem; line-height: 1.2; }
+  header .brand span { display: block; font-weight: 500; font-size: .9rem; color: var(--muted); letter-spacing: .04em; }
+  h1 { font-size: 2rem; line-height: 1.2; margin: 32px 0 12px; }
+  h2 { font-size: 1.2rem; margin: 0 0 8px; }
+  .lead { font-size: 1.1rem; color: var(--ink-2); margin: 0 0 28px; }
+  .card { background: var(--surface); border: 1px solid var(--line); border-radius: 16px; padding: 22px 24px; margin: 0 0 16px; }
+  ul { padding-left: 20px; margin: 8px 0 0; }
+  li { margin: 4px 0; }
+  a { color: var(--accent); }
+  code { background: var(--accent-soft); padding: 1px 6px; border-radius: 6px; font-size: .92em; }
+  footer { border-top: 1px solid var(--line); margin-top: 32px; padding: 20px 0 40px; color: var(--muted); font-size: .92rem; }
+  footer a { margin-right: 16px; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <svg viewBox="0 0 256 256" aria-hidden="true"><rect width="256" height="256" rx="57.6" fill="#3F2FB5"/><g transform="translate(37.16 37.38) scale(0.709)" fill="#fff"><path fill-rule="evenodd" d="M219.91,64A112,112 0 1 0 240,128H130V154H195.14A72,72 0 1 1 160.98,64ZM130,106H240V80H130Z"/></g></svg>
+    <div class="brand">Generador Presupuestario<span>RACSERVEI</span></div>
+  </header>
+
+  <main>
+    <h1>Presupuestos e informes para clientes, desde el escritorio</h1>
+    <p class="lead">Generador Presupuestario es un programa de escritorio (macOS y Windows) que usa RACSERVEI para preparar
+      presupuestos a sus clientes, llevar su historial y su estado, y emitir informes de trabajo.</p>
+
+    <section class="card">
+      <h2>Qué hace</h2>
+      <ul>
+        <li>Crea presupuestos con cálculo automático de precios, neto, IVA y total, y los descarga en PDF.</li>
+        <li>Lleva el historial de presupuestos (pendiente, aprobado o no aprobado) y la utilidad del mes.</li>
+        <li>Prepara informes (reports) para cada cliente, con su detalle por fecha.</li>
+        <li>Guarda clientes, proveedores y un calendario de trabajo.</li>
+      </ul>
+    </section>
+
+    <section class="card">
+      <h2>Tus datos quedan en tu computador</h2>
+      <p>La información se guarda en una base de datos dentro del propio computador. No hay un servidor de RACSERVEI
+        que reciba tus clientes ni tus presupuestos.</p>
+    </section>
+
+    <section class="card">
+      <h2>Respaldo en Google Drive</h2>
+      <p>Si lo activas, el programa sube una copia de respaldo de su base de datos a una carpeta de tu Google Drive.
+        Para eso pide solo el permiso <code>drive.file</code>: puede ver y administrar únicamente los archivos que él mismo crea,
+        nunca el resto de tu Drive. Puedes desconectarlo cuando quieras.</p>
+      <p>Detalle completo en la <a href="privacidad.html">política de privacidad</a>.</p>
+    </section>
+  </main>
+
+  <footer>
+    <a href="privacidad.html">Política de privacidad</a>
+    <a href="mailto:javieralonsocatalan@gmail.com">Contacto</a>
+    <div>© 2026 RACSERVEI</div>
+  </footer>
+</div>
+</body>
+</html>
